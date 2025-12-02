@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        /* .o{
+            color: blueviolet;
+
+        }
+        .e{
+            color: aquamarine;
+        } */
+        
+        /* ul li:nth-child(odd){
+            color: red;
+        }
+        ul li:nth-child(even){
+            color:blue;
+        } */
+        ul li:nth-child(1),li:nth-child(3),li:nth-child(5){
+            color: blueviolet;
+        }
+        ul li:nth-child(2),li:nth-child(4),li:nth-child(6){
+            color: rgb(7, 219, 60);
+        }
+        ul li::first-letter{
+            color: blueviolet;font-size: 40px;
+        }
+        ul li::after{
+            content:" read more";
+            color:red;
+        }
+        ::marker{
+            color: rgb(7, 219, 60);
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li >cse1</li>
+        <li >cse2</li>
+        <li >cse3</li>
+        <li >cse4</li>
+        <li >cse5</li>
+        <li >cse6</li>
+        
+    </ul>
+    
+</body>
+</html>

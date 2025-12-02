@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+
+    }
+    html, * {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        
+    }
+    main{
+        width: 1200px;
+        height: auto;
+        background-color: aqua;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav,header,footer,article{
+        background-color: brown;
+        min-height: 140px;
+        text-align: center;
+        line-height: 140px;
+    }
+    section{
+        height: 300px;
+        background-color: rgb(212, 137, 40);
+        text-align: center;
+        line-height: 300px;
+
+
+    }
+    .box{
+        flex-grow: 1;
+        background-color: blue;
+        text-align: center;
+        flex-direction: row;
+
+    }
+    
+</style>
+<body>
+    <main>
+        <nav><h2>Navigation</h2></nav>
+        <header><h2>header</h2></header>
+        <article><h2>enter text area</h2></article>
+        <section>
+            <div class="box"><h2>box1</h2></div>
+            <div class="box"><h2>box2</h2></div>
+            <div class="box"><h2>box3</h2></div>
+        </section>
+        <footer><h2>footer</h2></footer>
+
+    </main>
+   
+</body>
+</html>
